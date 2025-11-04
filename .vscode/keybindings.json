@@ -1,0 +1,8 @@
+[
+    {
+        "key": "ctrl+alt+a",
+        "command": "workbench.action.openSettings",
+        "args": "editor.quickSuggestions",
+        "when": "editorTextFocus"
+    }
+]

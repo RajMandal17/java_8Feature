@@ -1,0 +1,30 @@
+{
+  "name": "toggle-autocomplete",
+  "displayName": "Toggle Autocomplete",
+  "description": "Toggle VS Code autocomplete on/off with Ctrl+Alt+I",
+  "version": "1.0.1",
+  "publisher": "local",
+  "engines": {
+    "vscode": "^1.74.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.toggleAutocomplete",
+        "title": "Toggle Autocomplete (Ctrl+Alt+I)"
+      }
+    ],
+    "keybindings": [
+      {
+        "command": "extension.toggleAutocomplete",
+        "key": "ctrl+alt+i",
+        "mac": "cmd+alt+i"
+      }
+    ]
+  }
+}

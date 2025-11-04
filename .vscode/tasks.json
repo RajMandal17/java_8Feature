@@ -1,0 +1,144 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build All Modules",
+            "type": "shell",
+            "command": "./build.sh",
+            "args": ["build"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            },
+            "problemMatcher": [],
+            "detail": "Build and run all Java 8 functional interfaces modules"
+        },
+        {
+            "label": "Clean Build",
+            "type": "shell",
+            "command": "./build.sh",
+            "args": ["clean"],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "detail": "Remove all compiled .class files"
+        },
+        {
+            "label": "Build Lambda Demo",
+            "type": "shell",
+            "command": "./build.sh",
+            "args": ["lambda"],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": [],
+            "detail": "Build and run Lambda and Anonymous Classes demo"
+        },
+        {
+            "label": "Build Predicate Demo",
+            "type": "shell",
+            "command": "./build.sh",
+            "args": ["predicate"],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": [],
+            "detail": "Build and run Predicate interface demo"
+        },
+        {
+            "label": "Build Function Demo",
+            "type": "shell",
+            "command": "./build.sh",
+            "args": ["function"],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": [],
+            "detail": "Build and run Function interface demo"
+        },
+        {
+            "label": "Build Supplier Demo",
+            "type": "shell",
+            "command": "./build.sh",
+            "args": ["supplier"],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": [],
+            "detail": "Build and run Supplier interface demo"
+        },
+        {
+            "label": "Build Consumer Demo",
+            "type": "shell",
+            "command": "./build.sh",
+            "args": ["consumer"],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": [],
+            "detail": "Build and run Consumer interface demo"
+        },
+        {
+            "label": "Build Exercises",
+            "type": "shell",
+            "command": "./build.sh",
+            "args": ["exercises"],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "always",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": [],
+            "detail": "Build and run Functional Interfaces exercises"
+        },
+        {
+            "label": "Quick Compile Current Module",
+            "type": "shell",
+            "command": "javac",
+            "args": ["*.java"],
+            "group": "build",
+            "presentation": {
+                "echo": true,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "shared"
+            },
+            "problemMatcher": [],
+            "detail": "Quickly compile Java files in current directory"
+        }
+    ]
+}
