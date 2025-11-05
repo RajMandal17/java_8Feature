@@ -67,10 +67,7 @@ public class BasicTransformations {
         
         List<Integer> numbers = Arrays.asList(1, 2, 3, 4, 5);
         
-        List<Integer> squares = numbers.stream()
-                                      .map(n -> n * n)  // Transform each element
-                                      .collect(Collectors.toList());
-        
+       String squares = numbers.stream().map(n -> n*n ).toString();
         System.out.println("Input:  " + numbers);
         System.out.println("Output: " + squares);
         
